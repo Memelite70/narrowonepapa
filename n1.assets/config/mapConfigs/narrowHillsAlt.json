@@ -1,0 +1,91 @@
+{
+	"$schema": "../schemas/mapConfig.v1.json",
+	"kingOfTheHillPosition": [0, 15, 0],
+	"globalMapVariables": {
+		"floorDeathHeight": -10,
+		"waterSfxVolume": 0.10000000149011612,
+		"windSfxBoostHeight": 24,
+		"windSfxVolume": 0.01,
+		"windSfxBoostVolume": 0.014999999664723873,
+		"flySphereRadius": 90
+	},
+	"randomMapVariableSets": [
+		{
+			"name": "Super sunny",
+			"probability": 3,
+			"cloudsHeight": 8,
+			"insectsSfxVolume": 0.015,
+			"birdsSfxVolume": 0.0007,
+			"skyHighColor": [0.1803921568627451, 0.6039215686274509, 1],
+			"skyMidColor": [
+				0.7019607843137254, 0.8313725490196079, 0.8980392156862745
+			],
+			"skyLowColor": [
+				0.32941176470588235, 0.7019607843137254, 0.8901960784313725
+			],
+			"skyPower": 0.45,
+			"fogAmount": 0.004,
+
+			"colorMultiplier": [
+				0.9294117647058824, 0.8627450980392157, 0.807843137254902
+			],
+			"colorMultiplierAdjust": 0.4800000000000002,
+			"colorAdder": [0, 0.0196078431372549, 0.00392156862745098],
+			"colorAdderAdjust": -0.04,
+			"saturation": 1.08
+		},
+		{
+			"name": "Red version",
+			"probability": 2,
+			"insectsSfxVolume": 0.02,
+			"birdsSfxVolume": 0.001,
+
+			"skyHighColor": [
+				0.8823529411764706, 0.2784313725490196, 0.2784313725490196
+			],
+			"skyMidColor": [
+				0.8352941176470589, 0.8196078431372549, 0.36470588235294116
+			],
+			"skyLowColor": [
+				0.8352941176470589, 0.8196078431372549, 0.36470588235294116
+			],
+			"skyPower": 0.6,
+			"fogAmount": 0.005,
+			"colorMultiplier": [
+				0.8431372549019608, 0.4196078431372549, 0.2784313725490196
+			],
+			"colorMultiplierAdjust": 0.06999999999999992,
+			"colorAdder": [0, 0, 0],
+			"colorAdderAdjust": -0.010000000000000004,
+			"saturation": 1.14
+		},
+		{
+			"name": "Fog version",
+			"probability": 1,
+			"waterSfxVolume": 0.12,
+			"windSfxVolume": 0.0015,
+			"birdsSfxVolume": 0.00009999999999999976,
+			"rainSfxVolume": 0.007,
+			"skyHighColor": [
+				0.12156862745098039, 0.3411764705882353, 0.6980392156862745
+			],
+			"skyMidColor": [
+				0.7215686274509804, 0.7803921568627451, 0.8588235294117647
+			],
+			"skyLowColor": [1, 1, 1],
+			"skyPower": 1,
+			"fogAmount": 0.02599999999999999,
+			"fogHeightAmount": 0.10899999999999987,
+			"fogHeightOffset": 5.699999999999998,
+			"fogHeightDistFalloff": 0,
+			"fogHeightAmountMin": 0,
+			"fogHeightAmountMax": 1,
+			"colorMultiplier": [1, 1, 1],
+			"colorMultiplierAdjust": 0.16999999999999998,
+			"colorAdder": [0, 0, 0],
+			"colorAdderAdjust": 0.030000000000000013,
+			"saturation": 1.2,
+			"lightningEnabled": false
+		}
+	]
+}

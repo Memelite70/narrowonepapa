@@ -40,7 +40,7 @@
                 const rule = getRedirectRule(resource);
                 if (rule) {
                     const newUrl = applyRedirect(resource, rule);
-                    console.log(`[Fetch Interceptor] Matched "${rule.match}". Redirecting: ${resource} -> ${newUrl}`);
+                    
                     argumentsList[0] = newUrl;
                 }
             } 
@@ -48,7 +48,7 @@
                 const rule = getRedirectRule(resource.url);
                 if (rule) {
                     const newUrl = applyRedirect(resource.url, rule);
-                    console.log(`[Fetch Interceptor] Matched "${rule.match}". Redirecting Request: ${resource.url} -> ${newUrl}`);
+                    
                     argumentsList[0] = new Request(newUrl, resource);
                 }
             }
@@ -56,7 +56,7 @@
                 const rule = getRedirectRule(resource.href);
                 if (rule) {
                     const newUrl = applyRedirect(resource.href, rule);
-                    console.log(`[Fetch Interceptor] Matched "${rule.match}". Redirecting URL Object: ${resource.href} -> ${newUrl}`);
+                    
                     argumentsList[0] = newUrl; 
                 }
             }
@@ -83,7 +83,7 @@
         const rule = getRedirectRule(url);
         if (rule) {
             const newUrl = applyRedirect(url, rule);
-            console.log(`[XHR Interceptor] Matched "${rule.match}". Redirecting: ${url} -> ${newUrl}`);
+            
             url = newUrl;
         }
         return nativeXHROpen.call(this, method, url, ...rest);
@@ -103,7 +103,7 @@
             const rule = getRedirectRule(value);
             if (rule) {
                 const newValue = applyRedirect(value, rule);
-                console.log(`[DOM setAttribute] Matched "${rule.match}". Redirecting: ${value} -> ${newValue}`);
+                
                 return nativeSetAttribute.call(this, name, newValue);
             }
         }
@@ -123,7 +123,7 @@
                     const rule = getRedirectRule(value);
                     if (rule) {
                         const newValue = applyRedirect(value, rule);
-                        console.log(`[DOM Property .${propertyName}] Matched "${rule.match}". Redirecting: ${value} -> ${newValue}`);
+                        
                         return nativeSetter.call(this, newValue);
                     }
                 }
@@ -154,7 +154,7 @@
                 
                 const patched = (location.protocol === 'https:' ? 'wss' : 'ws')
                     + '://' + location.host + '/narrow/game/' + subdomain + path;
-                    console.log(`wss://${subdomain}.narrow-one.com${path} to ${patched} ligga`)
+                    console.log(`wss://${subdomain}.narrow-one.com${path} to ${patched}`)
                 url = patched;
             }
         }

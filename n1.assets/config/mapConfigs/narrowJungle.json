@@ -1,0 +1,63 @@
+{
+	"$schema": "../schemas/mapConfig.v1.json",
+	"kingOfTheHillPosition": [0, 16, 0],
+	"globalMapVariables": {
+		"floorDeathHeight": -18,
+		"birdsSfxVolume": 0,
+		"jungleSfxVolume": 0.05,
+		"windSfxBoostHeight": 21,
+		"windSfxBoostVolume": 0.01,
+		"windSfxVolume": 0,
+		"flyRoofHeight": 30
+	},
+	"randomMapVariableSets": [
+		{
+			"name": "FoggyMorning",
+			"colorMultiplier": [
+				0.8901960784313725, 0.8705882352941177, 0.6705882352941176
+			],
+			"fogAmount": 0.01,
+			"saturation": 1.06,
+			"skyHighColor": [
+				0.10980392156862745, 0.44313725490196076, 0.6509803921568628
+			],
+			"skyMidColor": [1, 0.9019607843137255, 0.4],
+			"skyLowColor": [1, 0.9019607843137255, 0.4],
+			"skyPower": 1.6
+		},
+		{
+			"name": "Sunset (orange sky)",
+
+			"skyHighColor": [1, 0, 0],
+			"skyMidColor": [1, 0.9176470588235294, 0],
+			"skyLowColor": [1, 0.9176470588235294, 0],
+			"skyPower": 0.3,
+			"fogAmount": 0.001,
+			"colorMultiplier": [
+				0.6745098039215687, 0.3843137254901961, 0.3843137254901961
+			],
+			"colorMultiplierAdjust": 0.18999999999999997,
+			"colorAdder": [0, 0, 0],
+			"colorAdderAdjust": -1.0408340855860843e-17,
+			"saturation": 1.1
+		},
+		{
+			"name": "Mellow day",
+			"colorMultiplier": [
+				0.8274509803921568, 0.8392156862745098, 0.6235294117647059
+			],
+			"fogAmount": 0.008,
+			"saturation": 1.22,
+			"skyHighColor": [
+				0.07058823529411765, 0.16862745098039217, 0.5490196078431373
+			],
+			"skyMidColor": [
+				0.8549019607843137, 0.8313725490196079, 0.6627450980392157
+			],
+			"skyLowColor": [
+				0.8549019607843137, 0.8313725490196079, 0.6627450980392157
+			],
+			"skyPower": 0.9
+		}
+	]
+}

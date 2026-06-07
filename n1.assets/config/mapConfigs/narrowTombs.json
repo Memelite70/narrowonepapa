@@ -2,19 +2,12 @@
 	"$schema": "../schemas/mapConfig.v1.json",
 	"kingOfTheHillPosition": [0, 0, 0],
 	"globalMapVariables": {
-		"floorDeathHeight": -80,
+		"floorDeathHeight": -10,
 		"birdsSfxVolume": 0,
-		"windSfxVolume": 0.003,
-		"sphereDeathRadius": 160,
-		"flySphereRadius": 120
+		"windSfxVolume": 0.003
 	},
 	"randomMapVariableSets": [
 		{
-			"probability": 5,
-			"name": "default"
-		},
-		{
-			"probability": 3,
 			"name": "Pretty regular style",
 			"skyHighColor": [
 				0.1803921568627451, 0.3607843137254902, 0.8980392156862745
@@ -34,8 +27,7 @@
 			"saturation": 1.36
 		},
 		{
-			"probability": 1,
-			"name": "Blue sky red sun going down",
+			"name": "Blue sky red walls is sun going down",
 			"colorMultiplier": [
 				0.8196078431372549, 0.38823529411764707, 0.3803921568627451
 			],
@@ -53,7 +45,6 @@
 			]
 		},
 		{
-			"probability": 1,
 			"name": "Sun coming up",
 			"colorAdder": [0, 0, 0.0196078431372549],
 			"colorMultiplier": [
