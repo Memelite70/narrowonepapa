@@ -5,6 +5,10 @@
         { match: 'mapsConfig',          redirect: '/narrow/mapsConfig' },
         { match: 'promosConfig',          redirect: '/narrow/promosConfig' },
         { match: 'auth/guestAccountData',          redirect: '/narrow/guestAccountData' },
+        { match: 'api/shop/getShopState',          redirect: '/narrow/getShopState' },
+        { match: 'api/profile/getProfile',          redirect: '/narrow/getProfile' },
+        { match: 'config/shopConfig',          redirect: '/narrow/shopConfig' },
+        { match: 'api/shop/purchaseItem',          redirect: '/narrow/purchaseItem' },
         { match: '/config/', redirect: '/n1.assets/config/', partial: true },
 
     ];
