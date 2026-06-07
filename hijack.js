@@ -4,7 +4,9 @@
     const REDIRECT_MAP = [
         { match: 'mapsConfig',          redirect: '/narrow/mapsConfig' },
         { match: 'promosConfig',          redirect: '/narrow/promosConfig' },
+        { match: 'auth/guestAccountData',          redirect: '/narrow/guestAccountData' },
         { match: '/config/', redirect: '/n1.assets/config/', partial: true },
+
     ];
 
     function getRedirectRule(url) {
